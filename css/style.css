@@ -189,64 +189,6 @@
 }
 
 /* ===========================
-   Hero Responsive
-=========================== */
-
-@media(max-width:900px){
-
-    .hero{
-
-        padding:80px 20px;
-
-    }
-
-    .hero-container{
-
-        grid-template-columns:1fr;
-
-        gap:50px;
-
-    }
-
-    .hero-text{
-
-        text-align:center;
-
-    }
-
-    .hero p{
-
-        margin:auto;
-
-    }
-
-    .hero-buttons{
-
-        justify-content:center;
-
-    }
-
-    .hero-image{
-
-        margin-top:30px;
-
-    }
-
-    .hero h1{
-
-        font-size:48px;
-
-    }
-
-    .hero h2{
-
-        font-size:26px;
-
-    }
-
-}
-
-/* ===========================
    Research Section
 =========================== */
 
@@ -456,10 +398,95 @@ footer{
 
 }
 
-footer p{
 
-    font-size:15px;
+/* ===========================
+   Responsive Design
+=========================== */
 
-    letter-spacing:.3px;
+@media (max-width:900px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+    .logo a{
+
+        font-size:26px;
+
+    }
+
+    .hero{
+
+        min-height:auto;
+
+        padding:80px 20px;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+        text-align:center;
+
+    }
+
+    .hero-text{
+
+        text-align:center;
+
+    }
+
+    .hero p{
+
+        margin:0 auto 40px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image{
+
+        margin-top:20px;
+
+    }
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+    .hero h2{
+
+        font-size:26px;
+
+    }
+
+    .section-title h2{
+
+        font-size:34px;
+
+    }
 
 }
