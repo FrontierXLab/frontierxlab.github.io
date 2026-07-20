@@ -885,11 +885,14 @@ footer p{
 }
 
 .team-card img{
-    width:180px;
-    height:180px;
+    width:120px;
+    height:120px;
     border-radius:50%;
     object-fit:cover;
+    object-position:center top;
     margin:0 auto 20px;
+    border:4px solid #2563eb;
+    box-shadow:0 10px 25px rgba(37,99,235,.20);
 }
 
 .team-card h3{
