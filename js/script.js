@@ -88,3 +88,20 @@ function startCounter() {
 window.addEventListener("scroll", startCounter);
 
 window.addEventListener("load", startCounter);
+
+// ===========================
+// Mobile Menu Toggle
+// ===========================
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+if (menuToggle && navMenu) {
+
+    menuToggle.addEventListener("click", () => {
+
+        navMenu.classList.toggle("active");
+
+    });
+
+}
