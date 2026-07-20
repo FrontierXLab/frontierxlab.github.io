@@ -587,13 +587,15 @@ nav ul li a:hover{
 
 .stat-card h3{
 
-    font-size:42px;
+    font-size:46px;
 
     font-weight:800;
 
     color:#2563eb;
 
     margin-bottom:12px;
+
+    transition:.3s;
 
 }
 
