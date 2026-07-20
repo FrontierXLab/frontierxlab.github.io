@@ -338,25 +338,17 @@ nav ul li a:hover{
    Hero Image
 =========================== */
 
-.hero-image{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
 .hero-image img{
 
     width:100%;
 
-    max-width:500px;
+    max-width:520px;
 
     height:auto;
 
-    filter:drop-shadow(0 20px 40px rgba(37,99,235,.18));
+    animation:float 5s ease-in-out infinite;
+
+    filter:drop-shadow(0 25px 45px rgba(37,99,235,.18));
 
 }
 /* ===========================
@@ -805,6 +797,27 @@ footer p{
     .stats-grid{
 
         grid-template-columns:1fr;
+
+    }
+
+}
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
 
     }
 
