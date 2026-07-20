@@ -464,13 +464,21 @@ nav ul li a:hover::after{
 
     }
 
-    .hero-container{
+.hero-container{
 
-        grid-template-columns:1fr;
+    max-width:1200px;
 
-        text-align:center;
+    margin:auto;
 
-    }
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
 
     .hero-text{
 
