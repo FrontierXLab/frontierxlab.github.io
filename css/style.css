@@ -956,3 +956,15 @@ nav ul li a.active::after{
     color:#64748b;
     line-height:1.8;
 }
+.team-card img{
+    width:80px !important;
+    height:80px !important;
+    max-width:80px !important;
+    max-height:80px !important;
+    border-radius:50% !important;
+    object-fit:cover !important;
+    object-position:center top !important;
+    display:block !important;
+    margin:0 auto 20px !important;
+    border:3px solid #2563eb !important;
+}
