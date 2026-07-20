@@ -75,7 +75,7 @@ nav ul {
 nav ul li a {
     color: #ffffff;
     font-weight: 500;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -93,6 +93,13 @@ nav ul li a:hover {
     padding: 120px 20px;
 }
 
+/* NEW */
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .hero h1 {
     font-size: 60px;
     color: #0f172a;
@@ -108,7 +115,7 @@ nav ul li a:hover {
 
 .hero p {
     max-width: 760px;
-    margin: auto;
+    margin: 0 auto;
     font-size: 18px;
     color: #475569;
     line-height: 1.8;
@@ -131,12 +138,12 @@ nav ul li a:hover {
     padding: 14px 30px;
     border-radius: 8px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
     background: #2563eb;
-    color: white;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -144,14 +151,14 @@ nav ul li a:hover {
 }
 
 .btn-secondary {
+    background: #ffffff;
     border: 2px solid #0f172a;
     color: #0f172a;
-    background: white;
 }
 
 .btn-secondary:hover {
     background: #0f172a;
-    color: white;
+    color: #ffffff;
 }
 
 /* ===========================
@@ -177,16 +184,16 @@ nav ul li a:hover {
 }
 
 .card {
-    background: white;
+    background: #ffffff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .card h3 {
@@ -206,7 +213,7 @@ nav ul li a:hover {
 footer {
     margin-top: 80px;
     background: #0f172a;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 30px 20px;
 }
@@ -235,6 +242,10 @@ footer {
 
     .hero {
         padding: 80px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
     }
 
     .hero h1 {
