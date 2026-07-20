@@ -231,62 +231,57 @@ nav ul li a:hover::after{
 
 @media(max-width:900px){
 
-    nav{
+    .hero{
 
-        flex-direction:column;
-
-        gap:20px;
+        padding:80px 20px;
 
     }
 
-    nav ul{
+    .hero-container{
 
-        flex-wrap:wrap;
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:50px;
+
+    }
+
+    .hero-text{
+
+        text-align:center;
+
+    }
+
+    .hero p{
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
 
         justify-content:center;
 
-        gap:18px;
+    }
+
+    .hero-image{
+
+        margin-top:30px;
 
     }
 
-    .logo a{
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+    .hero h2{
 
         font-size:26px;
 
     }
-
-}
-/* ===========================
-   Hero Section
-=========================== */
-
-.hero{
-
-    min-height:calc(100vh - 80px);
-
-    display:flex;
-
-    align-items:center;
-
-    background:
-    radial-gradient(circle at top right,#dbeafe 0%,transparent 35%),
-    linear-gradient(135deg,#f8fbff 0%,#eef6ff 100%);
-
-}
-
-.hero-container{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:90px;
-
-    align-items:center;
 
 }
 
@@ -516,4 +511,34 @@ nav ul li a:hover::after{
 
     }
 
+}
+@media(max-width:900px){
+
+    ...
+
+}
+
+/* ===========================
+   Research Section
+=========================== */
+
+.research{
+
+    background:#ffffff;
+
+}
+
+.section-title{
+
+    ...
+}
+
+.research-grid{
+
+    ...
+}
+
+.card{
+
+    ...
 }
