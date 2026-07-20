@@ -867,37 +867,7 @@ footer p{
 
 }
 
-@keyframes float{
-   ...
-}
 
-/* ===========================
-   Team Section
-=========================== */
-
-.team{
-...
-}
-
-.team-grid{
-...
-}
-
-.team-card{
-...
-}
-
-.team-card img{
-...
-}
-
-/* ===========================
-   Scroll Animation
-=========================== */
-
-.reveal{
-...
-}
 /* ===========================
    Scroll Animation
 =========================== */
@@ -936,9 +906,53 @@ nav ul li a.active::after{
 // Mobile Menu
 // ===========================
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector("nav ul");
+/* ===========================
+   Team Section
+=========================== */
 
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
+.team{
+    background:#f8fafc;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    justify-content:center;
+}
+
+.team-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    border:1px solid #e2e8f0;
+    box-shadow:0 10px 25px rgba(15,23,42,.06);
+}
+
+.team-card img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+    margin:0 auto 20px;
+    border:4px solid #2563eb;
+}
+
+.team-card h3{
+    font-size:28px;
+    color:#0f172a;
+}
+
+.team-card h4{
+    color:#2563eb;
+    margin:10px 0 20px;
+    font-weight:600;
+}
+
+.team-card p{
+    color:#64748b;
+    line-height:1.8;
+}
