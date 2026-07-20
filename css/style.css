@@ -845,3 +845,16 @@ footer p{
     transform:translateY(0);
 
 }
+nav ul li a.active{
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
+
+nav ul li a.active::after{
+
+    width:100%;
+
+}
