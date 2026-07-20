@@ -437,3 +437,29 @@
     line-height:1.8;
 
 }
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:#cbd5e1;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+footer p{
+
+    font-size:15px;
+
+    letter-spacing:.3px;
+
+}
