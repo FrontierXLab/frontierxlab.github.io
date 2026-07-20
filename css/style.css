@@ -168,23 +168,15 @@
    Hero Image
 =========================== */
 
-.hero-image{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
 .hero-image img{
 
     width:100%;
 
-    max-width:480px;
+    max-width:500px;
 
     height:auto;
+
+    filter:drop-shadow(0 20px 40px rgba(37,99,235,.18));
 
 }
 
@@ -397,7 +389,15 @@ footer{
     border-top:1px solid rgba(255,255,255,.08);
 
 }
+footer p{
 
+    font-size:15px;
+
+    letter-spacing:.3px;
+
+    margin:0;
+
+}
 
 /* ===========================
    Responsive Design
