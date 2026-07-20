@@ -348,18 +348,14 @@ nav ul li a:hover{
 =========================== */
 
 .hero-image img{
-
     width:100%;
-
-    max-width:520px;
-
+    max-width:450px;
     height:auto;
-
+    margin:auto;
     animation:float 5s ease-in-out infinite;
-
-    filter:drop-shadow(0 25px 45px rgba(37,99,235,.18));
-
+    filter:drop-shadow(0 20px 40px rgba(37,99,235,.15));
 }
+
 /* ===========================
    Research Section
 =========================== */
