@@ -1,287 +1,30 @@
-/* ==========================================
-   FrontierX Lab Website
-   Version 1.0
-========================================== */
-
 /* ===========================
-   Global Styles
+   Hero Section
 =========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+.hero{
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-
-    font-family:'Inter',sans-serif;
-
-    background:#f8fafc;
-
-    color:#1f2937;
-
-    line-height:1.8;
-
-    overflow-x:hidden;
-
-}
-
-img{
-
-    max-width:100%;
-
-    display:block;
-
-}
-
-a{
-
-    text-decoration:none;
-
-}
-
-ul{
-
-    list-style:none;
-
-}
-
-section{
-
-    padding:100px 20px;
-
-}
-
-.container{
-
-    max-width:1200px;
-
-    margin:0 auto;
-
-    width:100%;
-
-}
-
-/* ===========================
-   Header
-=========================== */
-
-header{
-
-    position:sticky;
-
-    top:0;
-
-    z-index:1000;
-
-    width:100%;
-
-    background:rgba(15,23,42,.95);
-
-    backdrop-filter:blur(14px);
-
-    border-bottom:1px solid rgba(255,255,255,.08);
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-}
-
-/* ===========================
-   Navigation
-=========================== */
-
-nav{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:18px 25px;
-
-}
-
-.logo a{
-
-    color:#ffffff;
-
-    font-size:30px;
-
-    font-weight:700;
-
-    letter-spacing:.5px;
-
-    transition:.3s;
-
-}
-
-.logo a:hover{
-
-    color:#38bdf8;
-
-}
-
-nav ul{
+    min-height:calc(100vh - 80px);
 
     display:flex;
 
     align-items:center;
 
-    gap:32px;
+    background:
+    radial-gradient(circle at top right,#dbeafe 0%,transparent 35%),
+    linear-gradient(135deg,#f8fbff 0%,#eef6ff 100%);
 
 }
 
-nav ul li{
+.hero-container{
 
-    position:relative;
+    display:grid;
 
-}
+    grid-template-columns:1fr 1fr;
 
-nav ul li a{
+    gap:90px;
 
-    color:#ffffff;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-nav ul li a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-
-    bottom:-6px;
-
-    width:0;
-
-    height:2px;
-
-    background:#38bdf8;
-
-    transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-    color:#38bdf8;
-
-}
-
-nav ul li a:hover::after{
-
-    width:100%;
-
-}
-
-/* ===========================
-   Section Title
-=========================== */
-
-.section-title{
-
-    text-align:center;
-
-    max-width:760px;
-
-    margin:0 auto 70px;
-
-}
-
-.section-title h2{
-
-    font-size:42px;
-
-    color:#0f172a;
-
-    margin-bottom:18px;
-
-}
-
-.section-title p{
-
-    font-size:18px;
-
-    color:#64748b;
-
-    line-height:1.8;
-
-}
-
-/* ===========================
-   Responsive Navigation
-=========================== */
-
-@media(max-width:900px){
-
-    .hero{
-
-        padding:80px 20px;
-
-    }
-
-    .hero-container{
-
-        grid-template-columns:1fr;
-
-        text-align:center;
-
-        gap:50px;
-
-    }
-
-    .hero-text{
-
-        text-align:center;
-
-    }
-
-    .hero p{
-
-        margin:auto;
-
-    }
-
-    .hero-buttons{
-
-        justify-content:center;
-
-    }
-
-    .hero-image{
-
-        margin-top:30px;
-
-    }
-
-    .hero h1{
-
-        font-size:48px;
-
-    }
-
-    .hero h2{
-
-        font-size:26px;
-
-    }
+    align-items:center;
 
 }
 
@@ -457,21 +200,13 @@ nav ul li a:hover::after{
 
     }
 
-.hero-container{
+    .hero-container{
 
-    max-width:1200px;
+        grid-template-columns:1fr;
 
-    margin:auto;
+        gap:50px;
 
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:90px;
-
-    align-items:center;
-
-}
+    }
 
     .hero-text{
 
@@ -481,9 +216,7 @@ nav ul li a:hover::after{
 
     .hero p{
 
-        margin-left:auto;
-
-        margin-right:auto;
+        margin:auto;
 
     }
 
@@ -495,7 +228,7 @@ nav ul li a:hover::after{
 
     .hero-image{
 
-        margin-top:40px;
+        margin-top:30px;
 
     }
 
@@ -512,11 +245,6 @@ nav ul li a:hover::after{
     }
 
 }
-@media(max-width:900px){
-
-    ...
-
-}
 
 /* ===========================
    Research Section
@@ -528,17 +256,184 @@ nav ul li a:hover::after{
 
 }
 
-.section-title{
-
-    ...
-}
-
 .research-grid{
 
-    ...
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
 }
 
 .card{
 
-    ...
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    border:1px solid #e2e8f0;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.05);
+
+    transition:.35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(15,23,42,.12);
+
+}
+
+.card-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    border-radius:50%;
+
+    background:#dbeafe;
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    font-size:24px;
+
+    color:#0f172a;
+
+    margin-bottom:18px;
+
+}
+
+.card p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.read-more{
+
+    display:inline-block;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.read-more:hover{
+
+    color:#1d4ed8;
+
+    transform:translateX(5px);
+
+}
+
+/* ===========================
+   About Section
+=========================== */
+
+.about-home{
+
+    background:#f8fafc;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.about-card{
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    border:1px solid #e2e8f0;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.05);
+
+    transition:.35s ease;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(15,23,42,.12);
+
+}
+
+.about-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.about-card h3{
+
+    font-size:24px;
+
+    color:#0f172a;
+
+    margin-bottom:18px;
+
+}
+
+.about-card p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
 }
