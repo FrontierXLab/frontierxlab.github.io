@@ -57,7 +57,7 @@ function startCounter() {
 
             let count = 0;
 
-            const increment = Math.max(1, Math.ceil(target / 60));
+            const increment = Math.max(1, Math.ceil(target / 150));
 
             function updateCounter() {
 
