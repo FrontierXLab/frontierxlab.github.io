@@ -1,9 +1,23 @@
-body{
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:Arial, Helvetica, sans-serif;
     background:#f8fafc;
     color:#1f2937;
+    line-height:1.6;
 }
+
+/* ===========================
+   Navigation
+=========================== */
 
 nav{
     display:flex;
@@ -11,50 +25,116 @@ nav{
     align-items:center;
     padding:20px 60px;
     background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .logo{
-    color:white;
+    color:#ffffff;
     font-size:28px;
     font-weight:bold;
+    letter-spacing:1px;
 }
 
 nav ul{
-    list-style:none;
     display:flex;
+    list-style:none;
     gap:30px;
-    margin:0;
-    padding:0;
+}
+
+nav ul li{
+    list-style:none;
 }
 
 nav a{
-    color:white;
+    color:#ffffff;
     text-decoration:none;
     font-weight:500;
+    transition:color 0.3s ease;
 }
 
 nav a:hover{
     color:#38bdf8;
 }
 
+/* ===========================
+   Hero Section
+=========================== */
+
 .hero{
+    max-width:1000px;
+    margin:0 auto;
     text-align:center;
-    padding:120px 20px;
+    padding:120px 20px 100px;
 }
 
 .hero h1{
-    font-size:58px;
-    margin-bottom:10px;
+    font-size:60px;
+    margin-bottom:15px;
+    color:#0f172a;
 }
 
 .hero h2{
-    color:#475569;
+    font-size:30px;
     font-weight:400;
+    color:#475569;
+    margin-bottom:30px;
 }
 
 .hero p{
-    max-width:700px;
-    margin:25px auto;
+    max-width:750px;
+    margin:0 auto;
     font-size:18px;
     line-height:1.8;
+    color:#475569;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    margin-top:100px;
+    padding:25px;
+    text-align:center;
+    background:#0f172a;
+    color:#ffffff;
+    font-size:15px;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
 }
