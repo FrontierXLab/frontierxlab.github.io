@@ -103,17 +103,20 @@ nav{
 =========================== */
 
 .logo a{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 30px;
-    font-weight: 800;
-    color: #0f172a;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#0f172a;
+    font-size:30px;
+    font-weight:800;
+}
+.logo span{
+    white-space:nowrap;
 }
 
 .logo img{
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
 }
 
@@ -125,18 +128,15 @@ nav ul{
 
     display:flex;
 
-    gap:30px;
+    gap:24px;
 
 }
 
 nav ul li a{
-
     color:#475569;
-
     font-weight:500;
-
+    font-size:16px;
     transition:.3s;
-
 }
 
 nav ul li a:hover{
@@ -736,6 +736,7 @@ footer p{
     }
 
     .logo a{
+       align-items: center;
 
         font-size:26px;
 
