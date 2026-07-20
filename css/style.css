@@ -111,6 +111,16 @@ nav{
     color: #0f172a;
 }
 
+.logo img{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.logo span{
+    white-space: nowrap;
+}
+
 nav ul{
 
     display:flex;
