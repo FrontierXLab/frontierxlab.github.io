@@ -2,158 +2,204 @@
    Global Styles
 =========================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f8fafc;
-    color: #1f2937;
-    line-height: 1.6;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8fafc;
+    color:#1f2937;
+    line-height:1.6;
 }
 
 /* ===========================
    Navigation
 =========================== */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background: #0f172a;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1px;
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
-.logo a {
-    color: #ffffff;
-    text-decoration: none;
+.logo a{
+    color:#ffffff;
+    text-decoration:none;
 }
 
-.logo a:hover {
-    color: #ffffff;
+.logo a:hover{
+    color:#ffffff;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-nav ul li {
-    list-style: none;
+nav ul li{
+    list-style:none;
 }
 
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+nav ul li a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
 }
 
-nav ul li a:hover {
-    color: #38bdf8;
+nav ul li a:hover{
+    color:#38bdf8;
 }
 
 /* ===========================
    Hero Section
 =========================== */
 
-.hero {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 120px 20px 100px;
-    text-align: center;
+.hero{
+    max-width:1000px;
+    margin:0 auto;
+    padding:120px 20px 100px;
+    text-align:center;
 }
 
-.hero h1 {
-    font-size: 60px;
-    color: #0f172a;
-    margin-bottom: 15px;
+.hero h1{
+    font-size:60px;
+    color:#0f172a;
+    margin-bottom:15px;
 }
 
-.hero h2 {
-    font-size: 30px;
-    font-weight: 400;
-    color: #475569;
-    margin-bottom: 30px;
+.hero h2{
+    font-size:30px;
+    font-weight:400;
+    color:#475569;
+    margin-bottom:30px;
 }
 
-.hero p {
-    max-width: 750px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #475569;
+.hero p{
+    max-width:750px;
+    margin:0 auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#475569;
+}
+
+/* ===========================
+   Hero Buttons
+=========================== */
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-secondary{
+    background:#ffffff;
+    color:#0f172a;
+    border:2px solid #0f172a;
+}
+
+.btn-secondary:hover{
+    background:#0f172a;
+    color:#ffffff;
 }
 
 /* ===========================
    Footer
 =========================== */
 
-footer {
-    margin-top: 100px;
-    padding: 25px 20px;
-    background: #0f172a;
-    color: #ffffff;
-    text-align: center;
-    font-size: 15px;
+footer{
+    margin-top:100px;
+    padding:25px;
+    background:#0f172a;
+    color:#ffffff;
+    text-align:center;
 }
 
 /* ===========================
-   Responsive Design
+   Responsive
 =========================== */
 
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-    nav {
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
+    nav{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
     }
 
-    .logo {
-        font-size: 24px;
+    .logo{
+        font-size:24px;
     }
 
-    .hero {
-        padding: 80px 20px;
+    .hero{
+        padding:80px 20px;
     }
 
-    .hero h1 {
-        font-size: 42px;
+    .hero h1{
+        font-size:42px;
     }
 
-    .hero h2 {
-        font-size: 24px;
+    .hero h2{
+        font-size:24px;
     }
 
-    .hero p {
-        font-size: 16px;
+    .hero p{
+        font-size:16px;
     }
 
-    footer {
-        margin-top: 60px;
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+        width:220px;
+        text-align:center;
     }
 }
